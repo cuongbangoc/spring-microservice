@@ -25,3 +25,5 @@ nbdist/
 .nb-gradle/
 
 docker/*
+*.log
+*.log.*
