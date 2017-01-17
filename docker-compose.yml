@@ -57,20 +57,20 @@ services:
 #        networks:
 #            - back-net
 #
-#    mysql:
-#        image: mysql:5.7
-#        container_name: mysql
-#        ports:
-#            - '3306:3306'
-#        environment:
-#            # MYSQL_DATABASE: redmine
-#            MYSQL_ROOT_PASSWORD: 2Lj2UkqXymn6
-#            MYSQL_USER: cuongbn
-#            MYSQL_PASSWORD: 12345678
-#        volumes:
-#            - ./docker/docker_data/mysql:/var/lib/mysql
-#        networks:
-#            - back-net
+    mysql:
+        image: mysql:5.7
+        container_name: mysql
+        ports:
+            - '3306:3306'
+        environment:
+            MYSQL_DATABASE: demo
+            MYSQL_ROOT_PASSWORD: 12345678
+            MYSQL_USER: cuongbn
+            MYSQL_PASSWORD: cuongbn
+        volumes:
+            - ./docker/docker_data/mysql:/var/lib/mysql
+        networks:
+            - back-net
 
     mongodb:
         container_name: mongodb
